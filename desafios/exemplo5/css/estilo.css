@@ -1,0 +1,33 @@
+body {
+  background: #FFF;
+  font-family: serif;
+}
+
+aside {
+  width: 30%;
+  height: 630px;
+  background: #b8860b;
+  float: left;
+}
+
+header {
+  width: 70%;
+  height: 50px;
+  background: #daa521;
+  float: right;
+}
+
+main {
+  width: 70%;
+  height: 530px;
+  background: #fafae8;
+  float: right;
+}
+
+footer {
+  width: 70%;
+  height: 50px;
+  background: #040404;
+  float: right;
+  color: #fafae8;
+}

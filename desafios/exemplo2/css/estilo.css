@@ -1,0 +1,60 @@
+body {
+  font-family: Verdana;
+  font-size: 2em;
+  background: #cb9ba3;
+}
+
+section {
+  width: 100%;
+  height: 75px;
+  background: #8a3c62;
+  color: #f39663;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+header {
+  width: 70%;
+  height: 50px;
+  background: #FFF;
+  color: #8a3c62;
+}
+
+main {
+  width: 68%;
+  height: auto;
+  background: #FFF;
+  color: #8a3c62;
+  font-size: 20px;
+}
+
+.conteudo {
+  width: 90%;
+  height: auto;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  margin-left: 1%;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background: #ffb5c6;
+  color: #FFF;
+  clear: both;
+}
+
+aside {
+  width: 30%;
+  height: auto;
+  background: #cb9ba3;
+  color: #FFF;
+  float: right;
+}
+
+.tabela, td {
+  border: 1px solid #ebd6dc;
+  border-radius: 2px;
+  width: auto;
+  margin: 2%;
+}
