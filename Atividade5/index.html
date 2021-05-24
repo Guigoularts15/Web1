@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+      body{
+        background:#ffffff;
+        color:#000000;
+        font-family: 'KoHo', sans-serif;
+      }
+      .formato {
+        background:#0000ff;
+        color:#add8e6;
+        border-radius: 2rem;
+        font-size:2em;
+        display:block;
+        width:50%;
+        padding:2%;
+        margin-top:1%;
+      }
+      header {
+        width:100%;
+        margin-top: 1%;
+      }
+      main {
+        width:100%;
+        margin-top: 1%;
+      }
+      section {
+        width: 100%;
+      }
+      #left {
+        float: left;
+      }
+      #right {
+        float: right;
+      }
+      .marginauto {
+        margin: auto;
+        display: block;
+      }
+    </style>
+
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <span id="left" style="font-size:1m;">Ace Attorney</span>
+        <span id="right" style="font-size:1m;width:100px;border-radius:2rem;border: solid 2px;border-color: #fada5e;background:fff;padding:0.5%;text-align:center;color:#fada5e;font-weight:900;">JOIN US</span>
+        &nbsp;
+        <h2>Lorem ipsum dolor sit amet, <span style="color: #f5c71a;font-weight:900;">consectetur</span> adipiscing elit.</h2>
+        <h6 style="color:#ccc;">Sed sed tincidunt diam. Pellentesque quis ex et purus luctus consequat. Etiam in sagittis ante, eu consequat massa. </h6>
+        &nbsp;
+      </header>
+      <main>
+        <div class="row">
+          <div class="col">
+            <h5 style="font-size:2em;">Est qui dolorem ipsum</h5>
+            <div>
+              <p style="font-size:1em;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate sapien eu erat fermentum, at egestas nulla interdum. Mauris in congue ante. Integer consectetur lacus a lacus fringilla, vitae semper tortor commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi vitae lacus vehicula, ultrices nisl vel, dictum ipsum. Nunc at ullamcorper augue. In ultricies ac odio vel pretium. Vivamus nibh enim, sollicitudin luctus magna at, faucibus tristique tortor.</p>
+            </div>
+          </div>
+          <div class="col" style="background:#feb101;">
+            <img class="marginauto img-fluid" src="img/aceAttorney.png" alt="Ace Attorney" width="90%" height="90%">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 style="font-size:2em;">Praesent facilisis risus nisl, eget sagittis neque congue eu.</h5>
+            <p style="font-size:1em;">Proin elementum, libero vel lacinia posuere, justo massa scelerisque odio, in mattis nibh diam sit amet quam. Sed odio diam, efficitur nec bibendum pulvinar, blandit et libero. Ut enim purus, hendrerit in odio a, lobortis consectetur purus. Nullam ligula dolor, sodales non consequat nec, imperdiet a nulla. Maecenas ullamcorper ac leo ac tempor. Vestibulum condimentum laoreet risus, eu tempor est. Nullam aliquet tempor mauris dapibus fringilla.</p>
+          </div>
+          <div class="col" style="background:#feb101;">
+            <img class="marginauto img-fluid" src="img/apollo.png" alt="Ace Attorney" width="90%" height="90%">
+          </div>
+        </div>
+        <form name="mensagem" method="post">
+          <div style="border-radius:1rem;border:solid 1px #000;padding:5%;margin:5%;">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="form-control">
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email" class="form-control">
+
+            <input type="button" onclick="message()" value="Enviar" class="btn btn-danger" style="width:50%; margin-top:5%;">
+
+
+            <div class="formato" id="phoenix">
+
+            </div>
+
+            <input type="button" class="btn btn-dark" value="Mostrar" onclick="personagem()" style="width:50%; margin-top:5%;">
+            <script>
+              function message(){
+                var nome = document.mensagem.nome.value;
+                var email = document.mensagem.email.value;
+                alert("Nome: " + nome + "\nEmail: " + email)
+              }
+              function personagem(){
+                var personagem = new Object();
+                  personagem.nome = "Phoenix";
+                  personagem.sobrenome = "Wright";
+                  personagem.idade = 24;
+                  personagem.profissao = "Advogado";
+                  personagem.cabelo = "Preto"
+
+                  document.getElementById("phoenix").innerHTML = "Nome: " + personagem.nome + "<br>Sobrenome: " + personagem.sobrenome + "<br>Idade: " + personagem.idade + "<br>Profissão: " + personagem.profissao + "<br>Cor de cabelo: " + personagem.cabelo;
+              }
+            </script>
+          </div>
+        </form>
+      </main>
+    </section>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
