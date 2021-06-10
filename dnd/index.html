@@ -9,23 +9,117 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Dungeons and Dragons</title>
-
   </head>
-  <body>
+  <style type="text/css">
+  h2{
+    background:#ec2127;
+    text-align: center;
+    color: #fff;
+    padding: 1%;
+  }
+  .alignCenter{
+    text-align: center;
+    padding:0;
+  }
+  .imglogo{
+    position: relative;
+    height: 100%;
+  }
+  .centered {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+  }
+  .navbar {
+    position: relative;
+  }
+  .brand {
+    position: absolute;
+    left: 65%;
+    display: block;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .vertical-menu {
+  width: 100%; /* Set a width if you like */
+  }
+
+  .vertical-menu a {
+    background-color: #ec2127; /* Grey background color */
+    color: #fff;; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 5px; /* Add some padding */
+    margin-top: 10px;
+    text-decoration: none; /* Remove underline from links */
+  }
+
+  .vertical-menu a:hover {
+    background-color: #b3151a; /* Dark grey background on mouse-over */
+  }
+  .vertical-menu a.active {
+    background-color: #fff; /* Add a green color to the "active/current" link */
+    color: black;
+  }
+  </style>
+  <body >
     <div class="pos-f-t">
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-          <img src="img/dndlogo.png" alt="logo" height="15%" width="15%">
-          <h5 class="text-white h4">Notícias</h5>
-          <h5 class="text-white h4">Imagens</h5>
-          <h5 class="text-white h4">Como Jogar</h5>
+          <p class="alignCenter"><img src="img/dndlogo.png" alt="logo" height="50px" width="100px"></p>
+          <div class="vertical-menu">
+           <a href="#" class="active">Home</a>
+           <a href="#">Notícias</a>
+           <a href="#">Imagens</a>
+           <a href="#">Como Jogar</a>
+           <a href="#">Onde Comprar</a>
+           <a href="#">E-Mail</a>
+          </div>
         </div>
       </div>
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand brand" href="index.html">
+          <img class="imglogo" src="img/dndlogo.png" width="100px" height="50px" alt="logo" style="right:125%;">
+        </a>
       </nav>
+    </div>
+    <h2>Notícias</h2>
+    <div class="container">
+      <img src="img/article1.png" alt="article1" width="96%" height="96%" style="margin:2%;">
+      <div class="centered">Filme de Dungeons and Dragons ganha sinopse</div>
+    </div>
+    <h2>Imagens</h2>
+    <div class="container">
+      <img src="img/playDnd.png" alt="playDnd" width="96%" height="96%" style="margin:2%;">
+    </div>
+    <h2>História</h2>
+    <div class="container">
+      <h3 style="color:#000;">Fontes e Influencias</h3>
+      <p style="color:#000; text-align:left;">
+        Criado por Gary Gygax e Dave Arneson O jogo tem origens em jogos de tabuleiro dos gêneros WarGame
+        e miniaturas, o jogo surgiu como um spin-off de um jogo de um WarGame chamado Chainmail (1971),
+        criado por Gary Gygax e Jeff Perren.
+
+        O mundo de D&D foi influenciado pela mitologia mundial, história, literatura pulp, e romances de
+        fantasia contemporânea. A importância do trabalho de J.R.R. Tolkien, autor de O Senhor dos Anéis
+        e O Hobbit como uma influência sobre D&D é controversa. A presença no jogo de halflings, elfos,
+        meio-elfos, anões, orcs, rangers e afins, estabelece comparações com essas obras. A semelhança
+        era ainda mais antes que a ameaça de processo pela Tolkien Enterprises, que fez com que nomes
+        fossem alterado, hobbit para "halfling", ent para 'ente', e Balrog para 'balor ". Por muitos
+        anos Gygax minimizou a influência de Tolkien sobre o desenvolvimento do jogo. No entanto, em uma
+        entrevista em 2000, ele reconheceu que a obra de Tolkien teve um "impacto forte".
+
+        Outras influências incluem as obras de Jack Vance, Poul Anderson, Robert E. Howard, Edgar Rice
+        Burroughs, A. Merritt, H. P. Lovecraft, Fritz Leiber, L. Sprague de Camp, Fletcher Pratt, Roger
+        Zelazny, Michael Moorcock, A. E. van Vogt e Lewis Carroll.
+      </p>
     </div>
 
 
