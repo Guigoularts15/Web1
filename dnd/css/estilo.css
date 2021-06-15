@@ -1,0 +1,75 @@
+h2{
+  background:#ec2127;
+  text-align: center;
+  color: #fff;
+  padding: 1%;
+  font-weight: bold;
+}
+.alignCenter{
+  text-align: center;
+  padding:0;
+}
+.imglogo{
+  position: relative;
+  height: 100%;
+  right: 250px;
+}
+.centered {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+}
+.navbar {
+  position: relative;
+}
+.brand {
+  position: absolute;
+  left: 65%;
+  display: block;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 1%;
+}
+.vertical-menu {
+width: 100%; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #ec2127; /* Grey background color */
+  color: #fff; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 5px; /* Add some padding */
+  margin-top: 10px;
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold;
+  text-align: center;
+}
+
+.article{
+  margin-bottom: 2%;
+}
+
+
+.vertical-menu a:hover {
+  background-color: #b3151a; /* Dark grey background on mouse-over */
+}
+.vertical-menu a.active {
+  background-color: #fff; /* Add a green color to the "active/current" link */
+  color: black;
+}
+
+@media screen and (max-width:480px) {
+  .imglogo{right: 240px;}
+  .centered{bottom: 40px;position: relative;font-size: 1.2em;}
+}
+
+@media screen and (max-width: 768px) {
+  .imglogo{right: 120px;}
+  .centered{bottom: 60px;position: relative;font-size: 1.2em;}
+  .article{margin-bottom:-8%;}
+}
