@@ -16,10 +16,10 @@ h2{
 }
 .centered {
   position: absolute;
-  bottom: 8px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .navbar {
   position: relative;
@@ -51,7 +51,7 @@ width: 100%; /* Set a width if you like */
 }
 
 .article{
-  margin-bottom: 2%;
+  margin: 2%;
 }
 
 
@@ -63,13 +63,41 @@ width: 100%; /* Set a width if you like */
   color: black;
 }
 
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-lg.round {
+	border-radius: 15px;
+}
+.btn-success {
+    background: #24831B;
+    color: #ffffff;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+    background: #2c9d22;
+}
+
+.btn-success:active, .btn-success.active {
+    background: #165210;
+    box-shadow: none;
+}
+
 @media screen and (max-width:480px) {
   .imglogo{right: 240px;}
-  .centered{bottom: 40px;position: relative;font-size: 1.2em;}
+  .centered{font-size: 1.2em;}
 }
 
 @media screen and (max-width: 768px) {
   .imglogo{right: 120px;}
-  .centered{bottom: 60px;position: relative;font-size: 1.2em;}
-  .article{margin-bottom:-8%;}
+  .centered{font-size: 1.2em;}
 }
