@@ -5,6 +5,15 @@ h2{
   padding: 1%;
   font-weight: bold;
 }
+
+h3 {
+  color: #808080;
+}
+
+h4 {
+  color: #808080;
+}
+
 .alignCenter{
   text-align: center;
   padding:0;
@@ -91,6 +100,17 @@ width: 100%; /* Set a width if you like */
     background: #165210;
     box-shadow: none;
 }
+
+.formato {
+  background:#ec2127;
+  border-radius: 5px;
+  font-size:1.5em;
+  display:block;
+  width:40%;
+  padding:2%;
+  margin-top:1%;
+}
+
 
 @media screen and (max-width:480px) {
   .imglogo{right: 240px;}
